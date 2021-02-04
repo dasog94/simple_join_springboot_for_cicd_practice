@@ -6,9 +6,9 @@ files:
     destination: /home/ec2-user
 
 hooks:
-#   ApplicationStop:
-#     - location: Scripts/kill_process.sh # before stop, kill process
-#   BeforeInstall:
-#     - location: Scripts/remove_before.sh # before remove, remove previous files
-#   ApplicationStart:
-#     - location: Scripts/run_process.sh # when start, run process
+   ApplicationStop:
+     - location: Scripts/kill_process.sh # before stop, kill process
+   BeforeInstall:
+     - location: Scripts/remove_before.sh # before remove, remove previous files
+   ApplicationStart:
+     - location: Scripts/run_process.sh # when start, run process
